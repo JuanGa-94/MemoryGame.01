@@ -1,0 +1,127 @@
+* {
+    font-family: 'Lexend', lexend, calibri;
+    box-sizing: border-box;
+
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-image: url("bkg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100vw;
+    padding: 10px;
+    align-content: center;
+    text-align: center;
+
+}
+
+h1 {
+    color: #C4D21C;
+    text-align: center;
+    margin-left: 50px;
+    padding-left: 20px;
+    border-left: solid 4px #C4D21C;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 50px;
+}
+
+p {
+    color: #C4D21C;
+    font-size: 22px;
+    margin: auto;
+
+}
+
+img {
+
+    width: 15%;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section p {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  border: 5px solid #ddd;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  display: none;
+}
+
+.card.flipped img {
+  display: block;
+}
+
+.card.flipped {
+  background-color: white;
+  color: transparent;
+}
+
+.card.matched {
+  background-color: #2ecc71;
+  color: transparent;
+  border: 5px solid #27ae60;
+}
+
+.card .number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+}
+
+
+
+
+footer p {
+    font-size: 16px;
+    color: #dadada;
+    font-weight: bolder;
+}
+
+footer {
+    margin-top: 25px;
+}
